@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #1B365C; /* Color de texto actualizado */
+    background-color: #7EA1C4; /* Color de fondo actualizado */
+}
+
+/* Estilo del encabezado */
+header {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #1B365C; /* Color de borde actualizado */
+    padding: 20px;
+    background: #fff; /* Fondo blanco para el encabezado */
+}
+
+.personal-data {
+    text-align: left;
+    flex: 3;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Estilo de las secciones generales */
+section, .skills-languages-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff; /* Fondo blanco para las secciones */
+}
+
+/* Sección de experiencia laboral con un borde */
+.experience, .skills-box, .languages-box {
+    border: 1px solid #1B365C; /* Color de borde actualizado */
+}
+
+/* Estilos para la sección de habilidades con barras de progreso */
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress-container {
+    background-color: #ddd; /* Color de fondo para la barra de progreso */
+    border: 1px solid #ccc;
+}
+
+.progress {
+    height: 20px;
+    background-color: #1B365C; /* Color de la barra de progreso */
+    width: 0%; /* Ancho inicial */
+    transition: width 0.5s ease; /* Transición suave */
+}
+
+/* Contenedor de habilidades e idiomas */
+.skills-languages-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-box, .languages-box {
+    flex-basis: calc(50% - 20px);
+    margin: 0 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background: #1B365C; /* Color de fondo actualizado */
+    color: #fff; /* Color de texto para el pie de página */
+    text-align: center;
+    padding: 10px 0;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #1B365C; /* Color de borde actualizado */
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 768px) {
+    header, section, .skills-languages-container, footer {
+        width: 95%;
+    }
+
+    .skills-languages-container {
+        flex-direction: column;
+    }
+
+    .skills-box, .languages-box {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+}
