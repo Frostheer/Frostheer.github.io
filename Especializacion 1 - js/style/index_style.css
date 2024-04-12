@@ -1,0 +1,36 @@
+.fight--container img {
+
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.fight--container{
+    display: flex;
+    margin-left: 500px;
+    margin-right: 500px;
+
+}
+
+.hero{
+    margin-right: 50px;
+    margin-left: 50px;
+
+    padding: 10px;
+    border: black 2px solid;
+}
+
+.vida{
+
+    height: 10px;
+    width: 100px;
+
+    border-radius: 10px;
+    background-color: #1b6d85;
+}
+
+
+.hero h2 {
+    text-align: center;
+}
