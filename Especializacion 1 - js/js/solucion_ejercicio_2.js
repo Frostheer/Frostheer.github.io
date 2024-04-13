@@ -80,7 +80,11 @@ async function fight(firstCharacter, secondCharacter) {
 
   while (true) {
     if (firstCharacter.isAlive()) {
-
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      firstCharacter.attack(secondCharacter).then(() => {
+        console.log(firstCharacter.status());
+        console.log(secondCharacter.status());
+      });
     } else {
       await new Promise(resolve => setTimeout(resolve, 1500));
       heroeMuerto(firstCharacter.idImagen);
