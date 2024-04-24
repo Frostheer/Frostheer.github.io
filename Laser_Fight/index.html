@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laser Fight</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<audio id="musica-fondo" loop>
+    <source src="./assets/audio/Musica de fondo.mp3" type="audio/mpeg">
+</audio>
+
+<body class="container">
+    <canvas class="canva" id="myCanvas" width="1000" height="600"></canvas>
+
+    <progress  value="90" max="90" class="barra__progresiva" id="izquierda-vida"></progress>
+
+    <progress value="90" max="90" class="barra__progresiva" id="derecha-vida"></progress>
+
+</body>
+
+<script type="module" src="./script/script_game.js"></script>
+
+</html>
