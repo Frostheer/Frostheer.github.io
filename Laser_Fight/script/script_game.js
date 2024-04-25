@@ -14,7 +14,7 @@ let juegoEnCurso = true;
 
 //Código que carga la imagen de la nave
 const naveImage = new Image();
-naveImage.src = '../assets/nave.png';
+naveImage.src = '../assets/nave.jpg';
 
 // Controles nave 1 (Izquierda)
 let botonIzquierdoNav1 = false;
