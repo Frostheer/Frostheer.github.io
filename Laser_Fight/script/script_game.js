@@ -1,4 +1,4 @@
-import {Nave} from "./enums/Nave.js";
+import {Nave} from "./objetos/Nave.js";
 import {NaveEnum} from "./enums/NaveEnum.js";
 import {EscenarioEnum} from "./enums/EscenarioEnum.js";
 
@@ -14,7 +14,7 @@ let juegoEnCurso = true;
 
 //Código que carga la imagen de la nave
 const naveImage = new Image();
-naveImage.src = '../assets/nave.jpg';
+naveImage.src = '../assets/nave.png';
 
 // Controles nave 1 (Izquierda)
 let botonIzquierdoNav1 = false;
